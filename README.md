@@ -39,3 +39,31 @@ Update `data/papers.json` with entries like this:
   "summary": "Introduces the Transformer architecture and self-attention as a replacement for recurrence in sequence modeling."
 }
 ```
+
+## Create paper workspace folders
+
+After adding a paper to `data/papers.json`, run:
+
+```bash
+python3 scripts/sync_paper_folders.py
+```
+
+This creates a stable numbered folder under `papers/`, for example:
+
+```text
+papers/001-attention-is-all-you-need/
+├── README.md
+└── notes.md
+```
+
+The script uses `papers/manifest.json` to remember which paper id belongs to which folder. It only creates missing files, so your notes will not be overwritten when you run it again. Add extra folders such as `assets/`, `code/`, or `simulations/` manually only when a paper needs them.
+
+Typical update flow:
+
+```bash
+python3 -m json.tool data/papers.json
+python3 scripts/sync_paper_folders.py
+git add data/papers.json papers scripts README.md
+git commit -m "Add paper workspace"
+git push origin main
+```
