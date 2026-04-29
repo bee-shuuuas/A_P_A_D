@@ -1,0 +1,80 @@
+[
+  {
+    "id": "attention-is-all-you-need",
+    "title": "Attention Is All You Need",
+    "authors": "Ashish Vaswani et al.",
+    "venue": "NeurIPS 2017",
+    "published": "2017-06-12",
+    "targetDate": "2026-04-29",
+    "status": "reading",
+    "tags": ["transformers", "nlp", "deep-learning"],
+    "link": "https://arxiv.org/abs/1706.03762",
+    "pdf": "https://arxiv.org/pdf/1706.03762",
+    "summary": "Introduces the Transformer architecture and self-attention as a replacement for recurrent sequence models."
+  },
+  {
+    "id": "deep-residual-learning",
+    "title": "Deep Residual Learning for Image Recognition",
+    "authors": "Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun",
+    "venue": "CVPR 2016",
+    "published": "2015-12-10",
+    "targetDate": "2026-04-30",
+    "status": "queued",
+    "tags": ["computer-vision", "deep-learning", "cnn"],
+    "link": "https://arxiv.org/abs/1512.03385",
+    "pdf": "https://arxiv.org/pdf/1512.03385",
+    "summary": "Presents residual connections that make very deep neural networks easier to optimize."
+  },
+  {
+    "id": "chain-of-thought-prompting",
+    "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+    "authors": "Jason Wei et al.",
+    "venue": "NeurIPS 2022",
+    "published": "2022-01-28",
+    "targetDate": "2026-05-01",
+    "status": "queued",
+    "tags": ["llm", "reasoning", "prompting"],
+    "link": "https://arxiv.org/abs/2201.11903",
+    "pdf": "https://arxiv.org/pdf/2201.11903",
+    "summary": "Shows that intermediate reasoning traces can improve large language model performance on multi-step tasks."
+  },
+  {
+    "id": "segment-anything",
+    "title": "Segment Anything",
+    "authors": "Alexander Kirillov et al.",
+    "venue": "ICCV 2023",
+    "published": "2023-04-05",
+    "targetDate": "2026-05-02",
+    "status": "saved",
+    "tags": ["computer-vision", "segmentation", "foundation-models"],
+    "link": "https://arxiv.org/abs/2304.02643",
+    "pdf": "https://arxiv.org/pdf/2304.02643",
+    "summary": "Introduces a promptable segmentation model and a large-scale dataset for image segmentation."
+  },
+  {
+    "id": "diffusion-policy",
+    "title": "Diffusion Policy: Visuomotor Policy Learning via Action Diffusion",
+    "authors": "Cheng Chi et al.",
+    "venue": "RSS 2023",
+    "published": "2023-03-07",
+    "targetDate": "2026-05-03",
+    "status": "queued",
+    "tags": ["robotics", "imitation-learning", "diffusion"],
+    "link": "https://arxiv.org/abs/2303.04137",
+    "pdf": "https://arxiv.org/pdf/2303.04137",
+    "summary": "Uses diffusion models to represent action distributions for visuomotor policy learning."
+  },
+  {
+    "id": "language-models-few-shot",
+    "title": "Language Models are Few-Shot Learners",
+    "authors": "Tom B. Brown et al.",
+    "venue": "NeurIPS 2020",
+    "published": "2020-05-28",
+    "targetDate": "2026-05-04",
+    "status": "queued",
+    "tags": ["llm", "few-shot-learning", "nlp"],
+    "link": "https://arxiv.org/abs/2005.14165",
+    "pdf": "https://arxiv.org/pdf/2005.14165",
+    "summary": "Studies scaling language models and evaluates in-context learning across many NLP tasks."
+  }
+]

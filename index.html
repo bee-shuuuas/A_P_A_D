@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A_P_A_D is a daily research paper tracker for reading lists, tags, notes, and progress.">
+    <title>A_P_A_D | Daily Paper Tracker</title>
+    <link rel="icon" href="assets/images/apad-mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/main.css">
+    <script src="assets/js/app.js" defer></script>
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <div class="wrapper header-content">
+        <a class="site-title" href="index.html" aria-label="A_P_A_D home">
+          <img src="assets/images/apad-mark.svg" alt="" class="site-logo">
+          <span>A_P_A_D</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a class="page-link active" href="index.html">Dashboard</a>
+          <a class="page-link" href="papers.html">Papers</a>
+          <a class="page-link" href="tags.html">Tags</a>
+          <a class="page-link" href="add.html">Add</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-content">
+      <div class="wrapper">
+        <section class="dashboard-head">
+          <div>
+            <p class="eyebrow">A paper a day</p>
+            <h1>Daily paper tracker</h1>
+            <p class="lede">Read one paper, keep the thread, and build a searchable trail of what you learned.</p>
+          </div>
+          <a class="button primary" href="add.html">Log paper</a>
+        </section>
+
+        <section class="stats-grid" aria-label="Reading statistics">
+          <article class="stat-tile">
+            <span class="stat-label">Total papers</span>
+            <strong id="statTotal">0</strong>
+          </article>
+          <article class="stat-tile">
+            <span class="stat-label">Read</span>
+            <strong id="statRead">0</strong>
+          </article>
+          <article class="stat-tile">
+            <span class="stat-label">Queue</span>
+            <strong id="statQueue">0</strong>
+          </article>
+          <article class="stat-tile">
+            <span class="stat-label">Streak</span>
+            <strong id="statStreak">0</strong>
+          </article>
+        </section>
+
+        <section class="main-grid">
+          <section class="panel">
+            <div class="section-header">
+              <div>
+                <p class="eyebrow">Today</p>
+                <h2>Reading focus</h2>
+              </div>
+            </div>
+            <div id="todayPaper" class="paper-list"></div>
+          </section>
+
+          <aside class="panel">
+            <div class="section-header">
+              <div>
+                <p class="eyebrow">Recent</p>
+                <h2>Progress</h2>
+              </div>
+            </div>
+            <div id="historyList" class="history-list"></div>
+          </aside>
+        </section>
+
+        <section class="panel">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Up next</p>
+              <h2>Reading list</h2>
+            </div>
+            <a class="text-link" href="papers.html">View all</a>
+          </div>
+          <div id="recentPapers" class="paper-list grid-list"></div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrapper footer-content">
+        <span>A_P_A_D</span>
+        <span>Built for GitHub Pages.</span>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Add a paper to A_P_A_D.">
+    <title>Add Paper | A_P_A_D</title>
+    <link rel="icon" href="assets/images/apad-mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/main.css">
+    <script src="assets/js/app.js" defer></script>
+  </head>
+  <body data-page="add">
+    <header class="site-header">
+      <div class="wrapper header-content">
+        <a class="site-title" href="index.html" aria-label="A_P_A_D home">
+          <img src="assets/images/apad-mark.svg" alt="" class="site-logo">
+          <span>A_P_A_D</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a class="page-link" href="index.html">Dashboard</a>
+          <a class="page-link" href="papers.html">Papers</a>
+          <a class="page-link" href="tags.html">Tags</a>
+          <a class="page-link active" href="add.html">Add</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-content">
+      <div class="wrapper">
+        <section class="page-heading">
+          <p class="eyebrow">Log</p>
+          <h1>Add paper</h1>
+        </section>
+
+        <section class="form-grid">
+          <form id="paperForm" class="panel paper-form">
+            <label>
+              <span>Title</span>
+              <input name="title" type="text" required>
+            </label>
+            <label>
+              <span>Authors</span>
+              <input name="authors" type="text">
+            </label>
+            <div class="field-row">
+              <label>
+                <span>Venue</span>
+                <input name="venue" type="text">
+              </label>
+              <label>
+                <span>Published</span>
+                <input name="published" type="date">
+              </label>
+            </div>
+            <div class="field-row">
+              <label>
+                <span>Target date</span>
+                <input name="targetDate" type="date">
+              </label>
+              <label>
+                <span>Status</span>
+                <select name="status">
+                  <option value="queued">Queued</option>
+                  <option value="reading">Reading</option>
+                  <option value="saved">Saved</option>
+                  <option value="read">Read</option>
+                </select>
+              </label>
+            </div>
+            <label>
+              <span>Paper link</span>
+              <input name="link" type="url" placeholder="https://arxiv.org/abs/...">
+            </label>
+            <label>
+              <span>PDF link</span>
+              <input name="pdf" type="url" placeholder="https://arxiv.org/pdf/...">
+            </label>
+            <label>
+              <span>Tags</span>
+              <input name="tags" type="text" placeholder="robotics, planning, llm">
+            </label>
+            <label>
+              <span>Summary</span>
+              <textarea name="summary" rows="5"></textarea>
+            </label>
+            <button class="button primary" type="submit">Save paper</button>
+          </form>
+
+          <aside class="panel data-tools">
+            <div class="section-header">
+              <div>
+                <p class="eyebrow">Data</p>
+                <h2>Local library</h2>
+              </div>
+            </div>
+            <div class="stacked-actions">
+              <button class="button secondary" id="exportData" type="button">Export JSON</button>
+              <label class="file-button">
+                <span>Import JSON</span>
+                <input id="importData" type="file" accept="application/json">
+              </label>
+            </div>
+            <div id="addPageSummary" class="mini-summary"></div>
+          </aside>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrapper footer-content">
+        <span>A_P_A_D</span>
+        <span>Keep the daily record moving.</span>
+      </div>
+    </footer>
+  </body>
+</html>
